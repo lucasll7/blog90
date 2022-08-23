@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2? família=Josefin+Sans:wght@200&family=Pacifico&display=swap');
+*{
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 3rem 0 2rem;
+}
+.caixa{
+    max-width: 1068px;
+    width: 100%;
+    margin: auto;
+}
+/*header8*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(29, 26, 26);
+    width: 100%;
+    z-index: 10000;
+}
+header.shadow{
+    background: white;
+    box-shadow: 0 1px 4px black;
+    transition: 0.5s;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 0;
+}
+.logo{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+header.shadow .logo{
+    color: black;
+}
+.logo span{
+    color: orange;
+}
+.login{
+    padding: 8px 14px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-radius: 4px;
+    background: orange;
+    color: white;
+}
+.login:hover{
+    background: rgb(236, 158, 11);
+    transition: 0.3s;
+}
+.home{
+    width: 100%;
+    min-height: 600px;
+    background-image: url(../imagens/nirvana.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.home-text{
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1rem;
+}
+.home-titulo{
+    font-size: 3.5rem;
+    color: orange;
+}
+.home-subtitulo{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+/*filtro post*/
+.filtro-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
+    margin-top: 2rem;
+}
+.filtro-item{
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+.filtro-ativo{
+    background: orange;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+/* postagem */
+.post{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+    justify-content: center;
+    gap: 1rem;
+}
+.post-box{
+    background: whitesmoke;
+    box-shadow: 0 4px 14px black;
+    color: black;
+    padding: 15px;
+    border-radius: 0.5rem;
+}
+.post-img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0.5rem;
+}
+.categoria{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: orange;
+}
+.post-titulo{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: black;
+    /*esconde uma parte do texto*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.post-data{
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+.post-descricao{
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 5px 0 10px;
+    /* uma parte do texto*/
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.sociais{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.sociais .bx{
+    font-size: 1.4rem;
+    color: black;
+}
+.sociais .bx:hover{
+    color: rgb(70, 40, 40);
+    transition: 0.3s all linear;
+}
